@@ -2,22 +2,23 @@
     float: left;
     width: 30%;
     height: 30rem;
+    margin-top: 3%;
+    margin-left: 2%;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
 }
-#restaurants{
-    margin-left: 6%;
-}
+
 .adress{
     min-height: 48px;
 }
 .card-body{
     height: 1000%;
 }
-@media screen and (min-width:751px)and (max-width:1026px){
+
+@media screen and (min-width:751px)and (max-width:1023px){
     .card{
         margin-left: 4%;
         margin-top: 2%;
@@ -28,7 +29,7 @@
 }
 @media screen and (min-width:200px)and (max-width:750px){
     .card{
-        margin-right: 3%;
+        margin-left: 5%;
         margin-top: 10%;
         width: 80%;
         height: 35rem;
