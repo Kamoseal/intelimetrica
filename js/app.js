@@ -1,12 +1,12 @@
 //extracting div from html
 const restaurants = document.getElementById('restaurants');
-//const ceroStars = document.getElementById('ceroStars');
 const ceroStars = document.getElementById('ceroStars');
 const oneStars = document.getElementById('oneStars');
 const twoStars = document.getElementById('twoStars');
 const threeStars = document.getElementById('threeStars');
 const fourStars = document.getElementById('fourStars');
 const stars = document.getElementById('stars');
+const alphabetically = document.getElementById('alphabetically');
 
 //Name URL
 const requesURL = 'https://s3-us-west-2.amazonaws.com/lgoveabucket/data_melp.json';
@@ -43,14 +43,17 @@ request.onload = function() {
 
         //assign HTML code to the template with values ​​extracted from the data
         template +=
-        `<ul>
-            <li>${name}</li>
-            <li>${rating}</li>
-            <li>${street, city, state}</li>
-            <li>${phone}</li>
-            <li>${site}</li>
-            <li>${email}</li>
-        </ul>`;
+        `<div class="card">
+            <img class="card-img-top" src=${"https://dummyimage.com/100px100.png/09f/fff"} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${name}</h5>
+                <p class="card-text">${city}${" "}${state}${" "}${street}</p>
+                <p class="card-text">${phone}</p>
+                <p class="card-text">${site}</p>
+                <p class="card-text">${email}</p>
+                <a href="#" class="btn btn-primary">¿Donde esta?</a>
+            </div>
+        </div>`;
             //painting information in HTML
             restaurants.innerHTML = template;
     });
@@ -71,14 +74,17 @@ request.onload = function() {
         const ing = arrayCeroStars.address.location.ing; 
         console.log(id);
         templateCeroStars +=
-        `<ul>
-            <li>${name}</li>
-            <li>${rating}</li>
-            <li>${street, city, state}</li>
-            <li>${phone}</li>
-            <li>${site}</li>
-            <li>${email}</li>
-        </ul>`;
+        `<div class="card" style="width: 18rem;">
+            <img class="card-img-top" src=${"https://dummyimage.com/100px180.png/09f/fff"} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${name}</h5>
+                <p class="card-text">${street, city, state}</p>
+                <p class="card-text">${phone}</p>
+                <p class="card-text">${site}</p>
+                <p class="card-text">${email}</p>
+                <a href="#" class="btn btn-primary">¿Donde esta?</a>
+            </div>
+        </div>`;
 
         ceroStars.addEventListener("click",function(e) {
             e.preventDefault();
@@ -99,16 +105,19 @@ request.onload = function() {
         const state = arrayOneStars.address.state;
         const lat = arrayOneStars.address.location.lat;
         const ing = arrayOneStars.address.location.ing; 
-        console.log(id);
+        
         templateOneStars +=
-        `<ul>
-            <li>${name}</li>
-            <li>${rating}</li>
-            <li>${street, city, state}</li>
-            <li>${phone}</li>
-            <li>${site}</li>
-            <li>${email}</li>
-        </ul>`;
+        `<div class="card">
+            <img class="card-img-top" src=${"https://dummyimage.com/100px180.png/09f/fff"} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${name}</h5>
+                <p class="card-text">${street, city, state}</p>
+                <p class="card-text">${phone}</p>
+                <p class="card-text">${site}</p>
+                <p class="card-text">${email}</p>
+                <a href="#" class="btn btn-primary">¿Donde esta?</a>
+            </div>
+        </div>`;
 
         oneStars.addEventListener("click",function(e) {
             e.preventDefault();
@@ -129,16 +138,19 @@ request.onload = function() {
         const state = arrayTwoStars.address.state;
         const lat = arrayTwoStars.address.location.lat;
         const ing = arrayTwoStars.address.location.ing; 
-        console.log(id);
+
         templateTwoStars +=
-        `<ul>
-            <li>${name}</li>
-            <li>${rating}</li>
-            <li>${street, city, state}</li>
-            <li>${phone}</li>
-            <li>${site}</li>
-            <li>${email}</li>
-        </ul>`;
+        `<div class="card" style="width: 18rem;">
+            <img class="card-img-top" src=${"https://dummyimage.com/100px180.png/09f/fff"} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${name}</h5>
+                <p class="card-text">${street, city, state}</p>
+                <p class="card-text">${phone}</p>
+                <p class="card-text">${site}</p>
+                <p class="card-text">${email}</p>
+                <a href="#" class="btn btn-primary">¿Donde esta?</a>
+            </div>
+        </div>`;
 
         twoStars.addEventListener("click",function(e) {
             e.preventDefault();
@@ -159,16 +171,19 @@ request.onload = function() {
         const state = arrayThreeStars.address.state;
         const lat = arrayThreeStars.address.location.lat;
         const ing = arrayThreeStars.address.location.ing; 
-        console.log(id);
+        
         templateThreeStars +=
-        `<ul>
-            <li>${name}</li>
-            <li>${rating}</li>
-            <li>${street, city, state}</li>
-            <li>${phone}</li>
-            <li>${site}</li>
-            <li>${email}</li>
-        </ul>`;
+        `<div class="card" style="width: 18rem;">
+            <img class="card-img-top" src=${"https://dummyimage.com/100px180.png/09f/fff"} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${name}</h5>
+                <p class="card-text">${street, city, state}</p>
+                <p class="card-text">${phone}</p>
+                <p class="card-text">${site}</p>
+                <p class="card-text">${email}</p>
+                <a href="#" class="btn btn-primary">¿Donde esta?</a>
+            </div>
+        </div>`;
 
         threeStars.addEventListener("click",function(e) {
             e.preventDefault();
@@ -189,37 +204,25 @@ request.onload = function() {
         const state = arrayFourStars.address.state;
         const lat = arrayFourStars.address.location.lat;
         const ing = arrayFourStars.address.location.ing; 
-        console.log(id);
+        
         templateFourStars +=
-        `<ul>
-            <li>${name}</li>
-            <li>${rating}</li>
-            <li>${street, city, state}</li>
-            <li>${phone}</li>
-            <li>${site}</li>
-            <li>${email}</li>
-        </ul>`;
+        `<div class="card" style="width: 18rem;">
+            <img class="card-img-top" src=${"https://dummyimage.com/100px180.png/09f/fff"} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${name}</h5>
+                <p class="card-text">${street, city, state}</p>
+                <p class="card-text">${phone}</p>
+                <p class="card-text">${site}</p>
+                <p class="card-text">${email}</p>
+                <a href="#" class="btn btn-primary">¿Donde esta?</a>
+            </div>
+        </div>`;
 
         fourStars.addEventListener("click",function(e) {
             e.preventDefault();
             stars.innerHTML = templateFourStars;  
         })     
     });
-    
-    
-
-   //ceroStars.addEventListener("click",function(e) {
-       // e.preventDefault();
-          
-        
-       // console.log(rating);
-        
-        
-   // })
-    
-    
-    
-
     //accommodating the information by alphabetically
     //escalar con Map
     let listRestaurant = [];
@@ -228,35 +231,10 @@ request.onload = function() {
         listRestaurant.push(restaurant); 
     });
         listRestaurant.sort();
-        //console.log(listRestaurant);
+        console.log(listRestaurant);
 
-        
-       
-     
-
-   
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         }
+        alphabetically.addEventListener("click",function(e) {
+            e.preventDefault();
+            stars.innerHTML = listRestaurant;
+        }
+)};     
