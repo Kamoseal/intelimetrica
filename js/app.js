@@ -21,7 +21,7 @@ request.onload = function() {
     let template = ``
     //tour array to extract information and assign name
     dataRestaurant.forEach(arrayRestaurants => {
-    //console.log(arrayRestaurants);
+    console.log(arrayRestaurants);
         const idRestaurant = arrayRestaurants.id;
         const rating = arrayRestaurants.rating;
         const name = arrayRestaurants.name;
@@ -46,21 +46,24 @@ request.onload = function() {
         </ul>`;
             //painting information in HTML
             restaurants.innerHTML = template;
-    
     });
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  }
+    //accommodating the information by rating
+    const ratingFilterCero = dataRestaurant.filter(function (dataRestaurant) {
+        return dataRestaurant.rating === 0;
+    });
+    const ratingFilterOne = dataRestaurant.filter(function (dataRestaurant) {
+        return dataRestaurant.rating === 1;
+    });
+    const ratingFilterTwo = dataRestaurant.filter(function (dataRestaurant) {
+        return dataRestaurant.rating === 2;
+    });
+    const ratingFilterThree = dataRestaurant.filter(function (dataRestaurant) {
+        return dataRestaurant.rating === 3;
+    });
+    const ratingFilterFour = dataRestaurant.filter(function (dataRestaurant) {
+        return dataRestaurant.rating === 4;
+    });
+// console.log(ratingFilter);
+ 
+//arrayRestaurants.orderByString('name');
+         }
