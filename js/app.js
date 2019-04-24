@@ -32,7 +32,7 @@ request.onload = function() {
         const city = arrayRestaurants.address.city;
         const state = arrayRestaurants.address.state;
         const lat = arrayRestaurants.address.location.lat;
-        const ing = arrayRestaurants.address.location.ing;
+        const ing = arrayRestaurants.address.location.ing;        
 
         //assign HTML code to the template with values ​​extracted from the data
         template +=
@@ -54,8 +54,42 @@ request.onload = function() {
     const ratingFilterThree = dataRestaurant.filter((dataRestaurant)=> dataRestaurant.rating === 3);
     const ratingFilterFour = dataRestaurant.filter((dataRestaurant)=> dataRestaurant.rating === 4);
 
+    //accommodating the information by alphabetically
+    let listRestaurant = [];
+    dataRestaurant.forEach(restaurantName => {
+        const restaurant = restaurantName.name;
+        listRestaurant.push(restaurant); 
+    });
+        listRestaurant.sort();
+        console.log(listRestaurant);
 
- console.log(ratingFilterFour);
- 
-//arrayRestaurants.orderByString('name');
+        
+       
+     
+
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
          }
