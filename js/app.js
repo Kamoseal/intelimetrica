@@ -74,11 +74,11 @@ request.onload = function() {
         const ing = arrayCeroStars.address.location.ing; 
         console.log(id);
         templateCeroStars +=
-        `<div class="card" style="width: 18rem;">
-            <img class="card-img-top" src=${"https://dummyimage.com/100px180.png/09f/fff"} alt="Card image cap">
+        `<div class="card">
+            <img class="card-img-top" src=${"https://dummyimage.com/100px100.png/09f/fff"} alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${name}</h5>
-                <p class="card-text">${street, city, state}</p>
+                <p class="card-text">${city}${" "}${state}${" "}${street}</p>
                 <p class="card-text">${phone}</p>
                 <p class="card-text">${site}</p>
                 <p class="card-text">${email}</p>
@@ -108,10 +108,10 @@ request.onload = function() {
         
         templateOneStars +=
         `<div class="card">
-            <img class="card-img-top" src=${"https://dummyimage.com/100px180.png/09f/fff"} alt="Card image cap">
+            <img class="card-img-top" src=${"https://dummyimage.com/100px100.png/09f/fff"} alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${name}</h5>
-                <p class="card-text">${street, city, state}</p>
+                <p class="card-text">${city}${" "}${state}${" "}${street}</p>
                 <p class="card-text">${phone}</p>
                 <p class="card-text">${site}</p>
                 <p class="card-text">${email}</p>
@@ -140,11 +140,11 @@ request.onload = function() {
         const ing = arrayTwoStars.address.location.ing; 
 
         templateTwoStars +=
-        `<div class="card" style="width: 18rem;">
-            <img class="card-img-top" src=${"https://dummyimage.com/100px180.png/09f/fff"} alt="Card image cap">
+        `<div class="card">
+            <img class="card-img-top" src=${"https://dummyimage.com/100px100.png/09f/fff"} alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${name}</h5>
-                <p class="card-text">${street, city, state}</p>
+                <p class="card-text">${city}${" "}${state}${" "}${street}</p>
                 <p class="card-text">${phone}</p>
                 <p class="card-text">${site}</p>
                 <p class="card-text">${email}</p>
@@ -173,11 +173,11 @@ request.onload = function() {
         const ing = arrayThreeStars.address.location.ing; 
         
         templateThreeStars +=
-        `<div class="card" style="width: 18rem;">
-            <img class="card-img-top" src=${"https://dummyimage.com/100px180.png/09f/fff"} alt="Card image cap">
+        `<div class="card">
+            <img class="card-img-top" src=${"https://dummyimage.com/100px100.png/09f/fff"} alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${name}</h5>
-                <p class="card-text">${street, city, state}</p>
+                <p class="card-text">${city}${" "}${state}${" "}${street}</p>
                 <p class="card-text">${phone}</p>
                 <p class="card-text">${site}</p>
                 <p class="card-text">${email}</p>
@@ -206,11 +206,11 @@ request.onload = function() {
         const ing = arrayFourStars.address.location.ing; 
         
         templateFourStars +=
-        `<div class="card" style="width: 18rem;">
-            <img class="card-img-top" src=${"https://dummyimage.com/100px180.png/09f/fff"} alt="Card image cap">
+        `<div class="card">
+            <img class="card-img-top" src=${"https://dummyimage.com/100px100.png/09f/fff"} alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${name}</h5>
-                <p class="card-text">${street, city, state}</p>
+                <p class="card-text">${city}${" "}${state}${" "}${street}</p>
                 <p class="card-text">${phone}</p>
                 <p class="card-text">${site}</p>
                 <p class="card-text">${email}</p>
