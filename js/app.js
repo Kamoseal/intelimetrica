@@ -43,16 +43,18 @@ request.onload = function() {
 
         //assign HTML code to the template with values ​​extracted from the data
         template +=
-        `<div class="card">
+        `
+        <div class="card grid-item">
             <img class="card-img-top" src=${"https://dummyimage.com/100px100.png/09f/fff"} alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${name}</h5>
-                <p class="card-text">${city}${" "}${state}${" "}${street}</p>
-                <p class="card-text">${phone}</p>
-                <p class="card-text">${site}</p>
-                <p class="card-text">${email}</p>
+                <p class="card-text adrres">${city}${" "}${state}${" "}${street}</p>
+                <p class="card-text adrres">${phone}</p>
+                <p class="card-text adrres">${site}</p>
+                <p class="card-text adrres">${email}</p>
                 <a href="#" class="btn btn-primary">¿Donde esta?</a>
-            </div>
+                </div>
+            
         </div>`;
             //painting information in HTML
             restaurants.innerHTML = template;
@@ -206,15 +208,17 @@ request.onload = function() {
         const ing = arrayFourStars.address.location.ing; 
         
         templateFourStars +=
-        `<div class="card">
+        `<div class="card grid-container">
+        <div class="card grid-item">
             <img class="card-img-top" src=${"https://dummyimage.com/100px100.png/09f/fff"} alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${name}</h5>
-                <p class="card-text">${city}${" "}${state}${" "}${street}</p>
+                <p class="card-text adress">${city}${" "}${state}${" "}${street}</p>
                 <p class="card-text">${phone}</p>
                 <p class="card-text">${site}</p>
                 <p class="card-text">${email}</p>
                 <a href="#" class="btn btn-primary">¿Donde esta?</a>
+            </div>
             </div>
         </div>`;
 
