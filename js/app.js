@@ -48,22 +48,14 @@ request.onload = function() {
             restaurants.innerHTML = template;
     });
     //accommodating the information by rating
-    const ratingFilterCero = dataRestaurant.filter(function (dataRestaurant) {
-        return dataRestaurant.rating === 0;
-    });
-    const ratingFilterOne = dataRestaurant.filter(function (dataRestaurant) {
-        return dataRestaurant.rating === 1;
-    });
-    const ratingFilterTwo = dataRestaurant.filter(function (dataRestaurant) {
-        return dataRestaurant.rating === 2;
-    });
-    const ratingFilterThree = dataRestaurant.filter(function (dataRestaurant) {
-        return dataRestaurant.rating === 3;
-    });
-    const ratingFilterFour = dataRestaurant.filter(function (dataRestaurant) {
-        return dataRestaurant.rating === 4;
-    });
-// console.log(ratingFilter);
+    const ratingFilterCero = dataRestaurant.filter((dataRestaurant)=> dataRestaurant.rating === 0);
+    const ratingFilterOne = dataRestaurant.filter((dataRestaurant)=> dataRestaurant.rating === 1);
+    const ratingFilterTwo = dataRestaurant.filter((dataRestaurant)=> dataRestaurant.rating === 2);
+    const ratingFilterThree = dataRestaurant.filter((dataRestaurant)=> dataRestaurant.rating === 3);
+    const ratingFilterFour = dataRestaurant.filter((dataRestaurant)=> dataRestaurant.rating === 4);
+
+
+ console.log(ratingFilterFour);
  
 //arrayRestaurants.orderByString('name');
          }
