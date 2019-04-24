@@ -1,8 +1,9 @@
 .card {
     margin-inline-start:3%;
+    margin-block-start: 2%;
     float: left;
     width: 30%;
-    height: 30%;
+    height: 30rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;

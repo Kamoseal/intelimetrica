@@ -238,3 +238,21 @@ request.onload = function() {
             stars.innerHTML = listRestaurant;
         }
 )};     
+//$(function() {
+    /*Define some constants */
+    //const ARTICLE_TITLE =  document.title;
+    //const ARTICLE_URL = encodeURIComponent(window.location.href);
+    //const MAIN_IMAGE_URL = encodeURIComponent($('meta[property="og:image"]').attr('content'));
+    
+    //$('.share-twitter').click(function(){
+      //open_window('http://twitter.com/share?url='+ARTICLE_URL, 'twitter_share');
+    //});
+    
+    //$('.share-google-plus').click(function(){
+      //open_window('https://plus.google.com/share?url='+ARTICLE_URL, 'google_share');
+    //});
+    
+    //function open_window(url, name){
+      //window.open(url, name, 'height=320, width=640, toolbar=no, menubar=no, scrollbars=yes, resizable=yes, location=no, directories=no, status=no');
+    //}
+//});
